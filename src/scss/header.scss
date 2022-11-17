@@ -145,6 +145,7 @@
         list-style-type: none;
     }
     &__burger-menu nav {
+        padding-top: 50px;//отступ от header
         width: 100%;
         height: 100%;
         overflow: auto; //прокрутка самого меню
