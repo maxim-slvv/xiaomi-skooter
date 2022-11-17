@@ -290,3 +290,7 @@ body {
 .burger__link {
   font-size: 30px;
 }
+
+.header__box {
+  background: url("../img/present/Байк1.png") no-repeat;
+}
