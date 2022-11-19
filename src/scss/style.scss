@@ -22,9 +22,39 @@ body {
     &_header {
         
     }
+    &__present{
+
+    }
+    &__title{ //стили всех title h1 на контентной части
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 1.1;
+        color: #F1F1F1;
+        @media (max-width:1160px) {
+            font-size: 45px;
+        } 
+        @media (max-width:1040px) {
+            font-size: 38px;
+        } 
+        @media (max-width:780px) {
+            font-size: 28px;
+        } 
+        @media (max-width:580px) {
+            font-size: 22px;
+        } 
+        @media (max-width:440px) {
+            font-size: 18px;
+        } 
+    }
 }
+// задаем цвета для текста
+$color__h1: #F1F1F1;
+$color__p: #FF4C0D;
+
+
 @import "header";
 
 @import "checkbox";
 
+@import "present";
 
