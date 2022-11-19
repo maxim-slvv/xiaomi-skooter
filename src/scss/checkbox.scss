@@ -34,15 +34,16 @@
       }
     }
     label {
+        cursor: pointer;
       .can-toggle__label-text { flex: 1;}
       .can-toggle__switch {
-        transition: background-color 0.3s $can-toggle-transition;
+        transition:  all 0.3s ease 0s;;
         background: lighten($can-toggle-off-color, 5%);
         &:before { color: $can-toggle-inactive-text; }
         &:after {
           // Autoprefixer choked here, so making the prefixes explicit
-          -webkit-transition: -webkit-transform 0.3s $can-toggle-transition;
-          transition: transform 0.3s $can-toggle-transition;
+          -webkit-transition: -webkit-transform all 0.3s ease 0s;;
+          transition:  all 0.3s ease 0s;
           color: $can-toggle-off-color; 
         }
       }
@@ -52,12 +53,12 @@
   @mixin can-toggle-appearance 
   ( 
     $can-toggle-width: 250px,
-    $can-toggle-height: 56px,
-    $can-toggle-border-radius: 3px,
+    $can-toggle-height: 54px,
+    $can-toggle-border-radius: 2px,
     $can-toggle-offset: 2px,
-    $can-toggle-label-font-size: 14px,
-    $can-toggle-switch-font-size: 12px,
-    $can-toggle-shadow: 0 3px 3px rgba(black, 0.4)
+    $can-toggle-label-font-size: 16px,
+    $can-toggle-switch-font-size: 16px,
+    $can-toggle-shadow: none
   ){
     $can-toggle-switch-width: $can-toggle-width/2;
     input[type="checkbox"] {
@@ -83,7 +84,7 @@
       font-size: $can-toggle-label-font-size;
       .can-toggle__switch {
         height: $can-toggle-height;
-        flex: 0 0 $can-toggle-width;
+        
         border-radius: $can-toggle-border-radius;
        
         &:before {
@@ -122,17 +123,22 @@
       &:checked {
         ~ label {
           .can-toggle__switch {
+
             &:before {
               content: attr(data-unchecked);
               left: 0;
+              
+        
             }
             &:after {
               content: attr(data-checked);
+          
             }  
           }
         }
         &:focus, &:hover {
           ~ label {
+            
           } 
         }
       }
@@ -142,6 +148,9 @@
       position: relative;
       display: flex;
       align-items: center;
+      font-weight: 700;
+      font-family: 'Gilroy';
+  
       .can-toggle__label-text { 
         flex: 1;
         padding-left: 32px;
@@ -152,14 +161,14 @@
           content: attr(data-checked);
           position: absolute;
           top: 0;
-          text-transform: uppercase;
+   
           text-align: center;
         }
         &:after {
           content: attr(data-unchecked);
           position: absolute;
           z-index: 5;
-          text-transform: uppercase;
+
           text-align: center;
           background: white;
           transform: translate3d(0,0,0);
@@ -169,20 +178,26 @@
     &.demo-rebrand-2 {
       @include can-toggle-branding
       (
-        rgb(26, 24, 24, 0.5),  // Off state color
-        rgb(26, 24, 24, 0.5),  // On state color
+        rgb(26, 24, 24, 0.9),  // Off state color
+        rgb(26, 24, 24, 0.9),  // On state color
         rgba(rgb(255, 255, 255), 1),  // Off state text color
         cubic-bezier(0.860, 0.000, 0.070, 1.000)  // Transition timing function
       );
       @include can-toggle-appearance
       (
         250px, // Toggle width
-        56px,  // Toggle height
+        50px,  // Toggle height
         100px,   // Toggle border radius
-        2px,   // Offset (distance btw switch and box)
+        -1px,   // Offset (distance btw switch and box)
         16px,  // Label font size
         16px,  // Switch font size
         0 4px 4px rgba(black, 0) // Switch shadow on hover/focus
       ); 
     }
+}
+.checkbox__border{
+    border: 2px solid white;
+    width: 254px;
+    height: 54px;
+    border-radius: 30px;
 }
