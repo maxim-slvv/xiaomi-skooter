@@ -157,7 +157,6 @@
         justify-content: center;
     }
 }
-
 @media (max-width:767.9px) { //при открытом меню блокируем прокрутку страницы
     body.lock{ 
         overflow: hidden;
@@ -169,17 +168,16 @@
     }
 }
 //?------------------Фоновое изображение -----------------------
-.header{
-    &__background{
+.background__image{
         margin: 0 auto;
-        max-width: 1140px;
+        max-width: 1160px;
         background: url('../img/intro/bike1-full.png') right top no-repeat;
         background-size: contain;
         @media (max-width:980px) {
             background: none; //- в последствии исчезает и появляется в блоке intro
         }
-    }
 }
+
 //?------------------Intro - титры, заголовок, байк-----------------------
 .intro {
     padding-top: 50px;
