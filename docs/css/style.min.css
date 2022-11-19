@@ -387,7 +387,7 @@ body {
   background: rgba(39, 36, 36, 0.9);
 }
 .can-toggle.demo-rebrand-2 label .can-toggle__switch:before {
-  color: white;
+  color: #f1f1f1;
 }
 .can-toggle.demo-rebrand-2 label .can-toggle__switch:after {
   -webkit-transition: -webkit-transform all 0.3s ease 0s;
@@ -430,7 +430,7 @@ body {
 }
 
 .checkbox__border {
-  border: 2px solid white;
+  border: 2px solid rgb(241, 241, 241);
   width: 254px;
   height: 54px;
   border-radius: 30px;
