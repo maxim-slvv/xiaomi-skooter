@@ -17,7 +17,10 @@ body {
 [class*="__container"] {
     max-width: 1160px;
     margin: 0 auto;
-    border: 1px solid lime; 
+
+       @media (max-width:1200px) {
+        padding: 0px 20px;
+    } 
 }
 
 .page {
@@ -28,7 +31,6 @@ body {
 @import "header";
 
 @import "checkbox";
-
 
 
 

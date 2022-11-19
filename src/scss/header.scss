@@ -3,13 +3,8 @@
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     &__box {
-        border: 1px solid rgb(0, 128, 255); 
-        @media (max-width: 1160px) {
-            padding: 0px 20px; 
-        }
-        @media (max-width: 767.9px) {
-            //бургер меню
-        }
+ 
+      
     }
     &__row {
         display: flex;
@@ -179,8 +174,105 @@
 }
 .header{
     &__background{
-        
-        background: url('../img/present/Байк1.png') right 0 no-repeat;
+        background: url('../img/present/bike1-full.png') right top no-repeat;
         background-size: contain;
+        @media (max-width:920px) {
+            background: none;
+        }
+        // @media (max-width:800px) {
+        //     background: url('../img/present/bike1-mini.png')  right 0 no-repeat;
+        //     background-size: cover;
+        //     background-size: 70%;
+        // }
+            // @media (max-width:920px) {
+            //     background-size: 80%;
+            //     background-size: cover;
+            // }
+       
     }
 }
+.present {
+    
+    padding-top: 50px;
+    padding-bottom: 250px;
+    @media (max-width:1160px) {
+        padding-top: 60px;
+        padding-bottom: 250px;
+    } 
+
+    @media (max-width: 920px) {
+        background: url('../img/present/bike1-mini.png') right top no-repeat;
+        background-size: contain;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+    } 
+    @media (max-width: 700px) {
+        background: url('../img/present/bike1-mini2.png') right top no-repeat;
+        background-size: contain;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+    } 
+   
+    &__container  {
+        @media (max-width:920px) {
+            background: rgba(0, 0, 0, 0.2);
+        } 
+        padding-bottom: 50px;
+    }
+    &__container h1 {
+        padding-top: 50px;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 1;
+        color: #F1F1F1;
+        @media (max-width:1160px) {
+            font-size: 65px;
+        } 
+        @media (max-width:1040px) {
+            font-size: 50px;
+        } 
+        @media (max-width:740px) {
+            font-size: 40px;
+        } 
+        @media (max-width:580px) {
+            padding-top: 30px;
+            font-size: 30px;
+        } 
+        @media (max-width:440px) {
+            font-size: 21px;
+        } 
+ 
+    }
+    &__container p {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        @media (max-width:580px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        } 
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2;
+        color: #FF4C0D;
+       
+        @media (max-width:1160px) {
+            font-size: 25px;
+        } 
+        @media (max-width:1040px) {
+            font-size: 25px;
+        } 
+        @media (max-width:740px) {
+            font-size: 20px;
+        } 
+        @media (max-width:580px) {
+            font-size: 15px;
+        } 
+        @media (max-width:440px) {
+            font-size: 10px;
+        } 
+    }
+}
+
+
