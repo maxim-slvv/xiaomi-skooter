@@ -220,9 +220,6 @@
         padding-bottom: 50px;
     }
     &__container h1 {
-        -webkit-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
-        -moz-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
-        text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
         padding-top: 50px;
         font-weight: 600;
         font-size: 80px;
@@ -247,9 +244,6 @@
  
     }
     &__container p {
-        -webkit-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
-        -moz-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
-        text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
         margin-top: 30px;
         margin-bottom: 60px;
         @media (max-width:580px) {
@@ -278,5 +272,7 @@
         } 
     }
 }
-
-
+.checking.active { //скрываем переключаетель 'черный/белый' при открытом меню бургер
+    position: relative;
+    z-index: -1;
+}
