@@ -8,3 +8,4 @@ $(document).ready(function(){
         if(windowWidth > 767.9)$(".header__burger, .header__link, .header__burger-menu, .lbl").toggleClass('active');
     })
 }); 
+
