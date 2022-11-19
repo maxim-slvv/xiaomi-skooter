@@ -104,11 +104,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
   font-family: "Gilroy";
-  max-width: 1440px;
+  max-width: auto;
   margin: 0 auto;
   border: 1px solid red;
   background: #222222;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+box-header {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 [class*=__container] {
@@ -129,39 +134,40 @@ body {
 }
 @media (max-width: 1160px) {
   .page__title {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media (max-width: 1040px) {
   .page__title {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 @media (max-width: 780px) {
   .page__title {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 @media (max-width: 580px) {
   .page__title {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (max-width: 440px) {
   .page__title {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
 .header {
+  max-width: auto;
   position: sticky;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.93);
 }
 .header__row {
   display: flex;
   align-items: center;
-  min-height: 133px;
+  min-height: 100px;
 }
 @media (max-width: 1160px) {
   .header__row {
@@ -334,6 +340,8 @@ body {
 }
 
 .header__background {
+  margin: 0 auto;
+  max-width: 1140px;
   background: url("../img/intro/bike1-full.png") right top no-repeat;
   background-size: contain;
 }
