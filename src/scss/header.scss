@@ -1,5 +1,9 @@
 .header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     &__box {
+        border: 1px solid rgb(0, 128, 255); 
         @media (max-width: 1160px) {
             padding: 0px 20px; 
         }
@@ -27,6 +31,13 @@
         @media (max-width: 767.9px) {
             margin-right: 0px;
         }
+    }
+    &__logo img {
+        @media (max-width: 767.9px) {
+            width: 40px;
+            height: 40px;
+        }
+       
     }
     &__links {
         display: flex;
@@ -167,7 +178,9 @@
     }
 }
 .header{
-    &__box{
-        background: url('../img/present/Байк1.png') no-repeat;
+    &__background{
+        
+        background: url('../img/present/Байк1.png') right 0 no-repeat;
+        background-size: contain;
     }
 }
