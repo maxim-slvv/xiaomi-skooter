@@ -176,7 +176,7 @@
     &__background{
         background: url('../img/present/bike1-full.png') right top no-repeat;
         background-size: contain;
-        @media (max-width:920px) {
+        @media (max-width:980px) {
             background: none;
         }
         // @media (max-width:800px) {
@@ -200,7 +200,7 @@
         padding-bottom: 250px;
     } 
 
-    @media (max-width: 920px) {
+    @media (max-width: 980px) {
         background: url('../img/present/bike1-mini.png') right top no-repeat;
         background-size: contain;
         padding-bottom: 0px;
@@ -216,12 +216,13 @@
     } 
    
     &__container  {
-        @media (max-width:920px) {
-            background: rgba(0, 0, 0, 0.2);
-        } 
+
         padding-bottom: 50px;
     }
     &__container h1 {
+        -webkit-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+        -moz-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
         padding-top: 50px;
         font-weight: 600;
         font-size: 80px;
@@ -233,7 +234,7 @@
         @media (max-width:1040px) {
             font-size: 50px;
         } 
-        @media (max-width:740px) {
+        @media (max-width:780px) {
             font-size: 40px;
         } 
         @media (max-width:580px) {
@@ -246,6 +247,9 @@
  
     }
     &__container p {
+        -webkit-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+        -moz-text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
         margin-top: 30px;
         margin-bottom: 60px;
         @media (max-width:580px) {
@@ -263,7 +267,7 @@
         @media (max-width:1040px) {
             font-size: 25px;
         } 
-        @media (max-width:740px) {
+        @media (max-width:780px) {
             font-size: 20px;
         } 
         @media (max-width:580px) {
