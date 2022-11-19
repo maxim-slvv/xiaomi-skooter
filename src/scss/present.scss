@@ -1,0 +1,106 @@
+.present {
+    &__container {
+    }
+    &__title {
+    }
+    &__cards {
+        display: flex;
+        margin: 0px -10px;
+        flex-direction: row;
+        @media (max-width:870px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+        } 
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 33.333%;
+        padding: 0px 10px;
+        height: 190px;
+        @media (max-width:768px) {
+            margin-bottom: 15px;  
+        }
+        @media (max-width:580px) {
+            margin-bottom: 8px;  
+        }
+        @media (max-width:440px) {
+            margin-bottom: 3px;  
+        }
+    }
+    &__card *:not(:last-child) {
+        margin-bottom: 15px;
+        
+    }
+    @media (max-width:870px) { //отступы под всеми карточками
+        &__card *:last-child {
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width:780px){
+        &__card *:last-child {
+            margin-bottom: 5px;
+        }
+        &__card *:not(:last-child) {
+            margin-bottom: 7px;
+            
+        }
+    }
+    &__hidden { //скрытые изображения
+        display: none;
+        @media (max-width:870px){
+            display: block;
+        }
+    }
+    &__hidden img{
+       width: 100%;
+       height: 100%;
+    }
+}
+.card {
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #F1F1F1;
+        @media (max-width:780px) {
+            font-size: 16px;
+        } 
+        @media (max-width:580px) {
+            font-size: 14px;
+        } 
+        @media (max-width:440px) {
+            font-size: 12px;
+        } 
+    }
+    &__divider {
+        width: auto;
+        height: 3px;
+        
+        background: #FF4C0D;
+        border: 1px solid #FF4C0D;
+        @media (max-width:870px) {
+            width: 150px;
+     
+        } 
+    }
+    &__subtitle {
+        
+      
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        color: #F1F1F1;
+        @media (max-width:780px){
+            font-size: 12px;
+        }
+        @media (max-width:580px) {
+            font-size: 10px;
+        } 
+        @media (max-width:440px) {
+            font-size: 8px;
+        } 
+    }
+}
+

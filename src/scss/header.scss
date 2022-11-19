@@ -1,7 +1,9 @@
 .header {
     max-width: auto;
     position: sticky;
+    position:-webkit-sticky;
     top: 0;
+    z-index: 50;
     background-color: rgba(0, 0, 0, 0.93);
     &__row {
         display: flex;

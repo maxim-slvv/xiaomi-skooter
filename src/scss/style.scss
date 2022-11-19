@@ -4,7 +4,7 @@
 body {
     font-family: 'Gilroy';
 
-    max-width: auto;
+
     margin: 0 auto;
 
     // background: #E0E0E0;
@@ -24,7 +24,7 @@ body {
     max-width: 1160px;
     margin: 0 auto;
        @media (max-width:1200px) {
-        padding: 0px;
+        padding: 0 0 0 20px;
     } 
 }
 .page {
@@ -39,6 +39,7 @@ body {
         font-size: 45px;
         line-height: 1.1;
         color: #F1F1F1;
+        padding-bottom: 60px;
         @media (max-width:1160px) {
             font-size: 40px;
         } 
@@ -51,8 +52,11 @@ body {
         @media (max-width:580px) {
             font-size: 20px;
         } 
-        @media (max-width:440px) {
+        @media (max-width:500px) {
             font-size: 17px;
+        } 
+        @media (max-width:440px) {
+            font-size: 14px;
         } 
     }
 }
