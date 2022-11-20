@@ -80,6 +80,10 @@ body {
     &__care{
         
     }
+
+    &__mobile{
+        
+    }
     &__title{ //стили всех title h2 на контентной части
         font-weight: 500;
         font-size: 45px;
@@ -144,4 +148,6 @@ $color__p: #FF4C0D;
 @import "design";
 
 @import "care";
+
+@import "mobile";
 
