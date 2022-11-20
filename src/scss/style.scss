@@ -74,25 +74,18 @@ body {
         }
     }
     &__design{
-        padding-bottom: 60px;
-        @media (max-width: 1160px) {
-            padding-bottom: 50px;
-        }
-        @media (max-width: 1040px) {
-            padding-bottom: 40px;
-        }
-        @media (max-width: 780px) {
-            padding-bottom: 35px;
-        }
-        @media (max-width: 580px) {
-            padding-bottom: 20px;
-        }
+       
+        
+    }
+    &__care{
+        
     }
     &__title{ //стили всех title h2 на контентной части
         font-weight: 500;
         font-size: 45px;
         line-height: 1.1;
         color: #F1F1F1;
+        padding-top: 60px;
         padding-bottom: 60px;
         display: flex;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.71);
@@ -149,4 +142,6 @@ $color__p: #FF4C0D;
 @import "bigcard";
 
 @import "design";
+
+@import "care";
 

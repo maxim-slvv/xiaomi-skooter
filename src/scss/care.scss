@@ -1,0 +1,19 @@
+.present {
+    &__container {
+    }
+    &__title {
+       margin-top: 0px;
+        @media (max-width:980px) {
+            margin-top: 0px;
+        }
+        @media (max-width:580px) {
+            margin-top: 0px;
+        }
+    }
+   
+    
+}
+
+.care_hidden{
+    display: none;
+}
