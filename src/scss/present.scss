@@ -9,7 +9,6 @@
         @media (max-width:580px) {
             margin-top: 30px;
         }
-      
     }
     &__cards {
         display: flex;
@@ -25,7 +24,6 @@
         flex-direction: column;
         flex: 0 0 33.333%;
         padding: 0px 10px;
-      
         @media (max-width:870px) {
             height: auto;
         }
@@ -41,7 +39,6 @@
     }
     &__card *:not(:last-child) {
         margin-bottom: 15px;
-        
     }
     @media (max-width:870px) { //отступы под всеми карточками
         &__card *:last-child {
@@ -54,7 +51,6 @@
         }
         &__card *:not(:last-child) {
             margin-bottom: 7px;
-            
         }
     }
     //?------------------большие и маленькие изображения-----------------------
@@ -63,7 +59,6 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
-       
     }
     &__hiddensmall { //скрытые изображения
         display: none;
@@ -79,7 +74,7 @@
         position: relative;
         margin-right: 10px;
         @media (max-width:970px){
-            display: flex;
+            display: none;
            flex-direction: row;
             text-align: center;
             margin-right: 0px;
@@ -94,7 +89,7 @@
             display: none;
         }
     }
-    &__hiddenbig, &__hiddenbig1{
+    &__hiddenbig1{
         position: relative;
         margin-right: 10px;
         @media (max-width:970px){
@@ -109,7 +104,7 @@
             width: 100%;
             height: auto;
         }
-        @media (max-width:975px){
+        @media (max-width:1200px){
             display: none;
         }
     }

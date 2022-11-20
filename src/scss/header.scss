@@ -170,13 +170,13 @@
     }
 }
 //?------------------Фоновое изображение -----------------------
-.background__image, .background__image .webp{
-        margin: 0 auto;
-        max-width: 1160px;
-        background: url('../img/intro/bike1-full.png') right top no-repeat;
-        @media (max-width:980px) { 
-            background: none !important; //- в последствии исчезает и появляется в блоке intro
-        }
+.background__image, .background__image{
+    margin: 0 auto;
+    max-width: 1160px;
+    background: url('../img/intro/bike1-full.png') right top no-repeat;
+    @media (max-width:980px) { 
+        background: none !important; //- в последствии исчезает и появляется в блоке intro
+    }
 } 
 //?------------------Intro - титры, заголовок, байк-----------------------
 .intro {
