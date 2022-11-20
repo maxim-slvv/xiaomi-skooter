@@ -56,7 +56,22 @@ body {
         }
     }
     &__bigcard{
-
+        padding-bottom: 60px;
+        @media (max-width: 1160px) {
+            padding-bottom: 50px;
+        }
+        @media (max-width: 1040px) {
+            padding-bottom: 40px;
+        }
+        @media (max-width: 780px) {
+            padding-bottom: 35px;
+        }
+        @media (max-width: 580px) {
+            padding-bottom: 20px;
+        }
+    }
+    &__design{
+        
     }
     &__title{ //стили всех title h1 на контентной части
         font-weight: 500;
@@ -109,4 +124,6 @@ $color__p: #FF4C0D;
 @import "present";
 
 @import "bigcard";
+
+@import "design";
 
