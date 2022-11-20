@@ -145,10 +145,14 @@ body {
 }
 
 .page__present {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .page__bigcard {
+  margin: 60px 0px 60px;
+}
+
+.page__design {
   padding-bottom: 60px;
 }
 
@@ -609,7 +613,11 @@ body {
 .present__hiddensmall img,
 .present__hiddensmall2 img {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.present__hiddensmall img {
+  height: auto;
 }
 
 .present__hiddenbig,
@@ -630,7 +638,6 @@ body {
 }
 
 .present__hiddenbig1 img {
-  max-width: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -638,16 +645,6 @@ body {
 
 .present__hiddenbig1 {
   display: none;
-}
-
-.present__hiddensmall3 {
-  display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  margin-right: 0px;
 }
 
 .card__title {
@@ -681,7 +678,6 @@ body {
 }
 
 .bigcard__container {
-  padding: 0;
   padding: 90px 100px;
 }
 
@@ -764,6 +760,10 @@ body {
     padding: 0 0 0 60px;
   }
 
+  .page__bigcard {
+    margin: 70px 0px 60px;
+  }
+
   .present__hiddenbig,
   .present__hiddenbig1 {
     -webkit-box-flex: 1;
@@ -773,19 +773,8 @@ body {
     height: auto;
   }
 
-  .present__hiddenbig1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 33.333%;
-            flex: 1 1 33.333%;
-    width: 100%;
-    height: auto;
-  }
-
-  .present__hiddenbig1 {
-    display: none;
+  .bigcard__container {
+    padding: 45px 40px;
   }
 
   .design__item1 {
@@ -794,6 +783,10 @@ body {
 
   .design__item2 {
     padding: 30px;
+  }
+
+  .design__subtitle {
+    margin-top: 260px;
   }
 
   .design__subtitle {
@@ -807,15 +800,20 @@ body {
   }
 
   .page__present {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .page__bigcard {
+    margin: 70px 0px 0px;
+  }
+
+  .page__design {
     padding-bottom: 50px;
   }
 
   .page__title {
     font-size: 40px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
 
@@ -866,15 +864,28 @@ body {
 
 @media (max-width: 1040px) {
   .page__present {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .page__bigcard {
+    margin: 50px 0px 0px;
+  }
+
+  .page__design {
     padding-bottom: 40px;
   }
 
   .page__title {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 35px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
 
@@ -941,34 +952,14 @@ body {
     margin-right: 0px;
   }
 
-  .present__hiddenbig1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    text-align: center;
-    margin-right: 0px;
-  }
-
   .present__hiddenbig img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
   }
 
-  .present__hiddensmall3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .present__hiddenbig1 img {
+    max-height: 350px;
   }
 }
 
@@ -1037,7 +1028,7 @@ body {
   }
 
   .card__subtitle {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -1057,15 +1048,20 @@ body {
 
 @media (max-width: 780px) {
   .page__present {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
   }
 
   .page__bigcard {
+    margin: 45px 0px 0px;
+  }
+
+  .page__design {
     padding-bottom: 35px;
   }
 
   .page__title {
     font-size: 25px;
+    padding-top: 45px;
     padding-bottom: 35px;
   }
 
@@ -1191,6 +1187,15 @@ body {
     background: rgba(0, 0, 0, 0.3);
   }
 
+  .bigcard__container {
+    padding: 30px 20px;
+  }
+
+  .bigcard__top img {
+    width: 40px;
+    height: 25px;
+  }
+
   .bigcard__title h4 {
     padding-bottom: 10px;
     font-size: 25px;
@@ -1284,6 +1289,14 @@ body {
     display: none;
   }
 
+  .card__title {
+    text-align: center;
+  }
+
+  .card__divider {
+    margin: 0 auto;
+  }
+
   .bigcard__container {
     padding: 30px 20px;
   }
@@ -1295,15 +1308,20 @@ body {
 
 @media (max-width: 580px) {
   .page__present {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .page__bigcard {
+    margin: 30px 0px 0px;
+  }
+
+  .page__design {
     padding-bottom: 20px;
   }
 
   .page__title {
     font-size: 20px;
+    padding-top: 40px;
     padding-bottom: 30px;
   }
 
@@ -1387,7 +1405,7 @@ body {
   }
 
   .card__subtitle {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .design__subtitle {

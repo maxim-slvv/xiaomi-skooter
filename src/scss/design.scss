@@ -88,6 +88,9 @@
             padding-bottom: 5px;
         }
         margin-top: 340px;
+        @media (max-width:1200px) { 
+            margin-top: 260px;
+        }
         @media (max-width:1160px) { 
             margin-top: 260px;
         }

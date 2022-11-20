@@ -20,6 +20,7 @@
         } 
     }
     &__card {
+        
         display: flex;
         flex-direction: column;
         flex: 0 0 33.333%;
@@ -68,8 +69,13 @@
     }
     &__hiddensmall img, &__hiddensmall2 img{
        width: 100%;
-       height: 100%;
+       height: auto;
     }
+    &__hiddensmall img{
+    
+       height: auto;
+    }
+    
     &__hiddenbig, &__hiddenbig1{
         position: relative;
         margin-right: 10px;
@@ -92,21 +98,8 @@
     &__hiddenbig1{
         position: relative;
         margin-right: 10px;
-        @media (max-width:975px){
-            display: flex;
-           flex-direction: row;
-            text-align: center;
-            margin-right: 0px;
-        }
-        @media (max-width:1200px){
-            display: flex;
-            flex: 1 1 33.333%;
-            width: 100%;
-            height: auto;
-        }
-        @media (max-width:1200px){
-            display: none;
-        }
+       
+       
     }
     &__hiddenbig img {
         max-width: 100%;
@@ -114,15 +107,16 @@
         @media (max-width:975px){
             width: 100%;
             object-fit: cover;
-            position: absolute; top: 50%; left: 50%;
-            transform: translate(-50%, 0%);
+            // position: absolute; top: 50%; left: 50%;
+            // transform: translate(-50%, 0%);
         }
     }
     &__hiddenbig1 img {
-        max-width: 100%;
         width: 100%;
         object-fit: cover;
-      
+        @media (max-width:975px){
+            max-height: 350px;
+        }
     }
     &__hiddenbig1 {
         display: none;
@@ -138,18 +132,11 @@
             display: none;
         }
     }
-    &__hiddensmall3{
-        display: none;
-        flex-direction: row;
-         text-align: center;
-         margin-right: 0px;
-         @media (max-width:975px){
-            display: flex;
-        }
-    }
+
 }
 //?------------------Карточки -----------------------
 .card {
+  
     &__title {
         font-weight: 600;
         font-size: 20px;
@@ -164,14 +151,21 @@
         @media (max-width:440px) {
             font-size: 12px;
         } 
+        @media (max-width: 660px) {
+            text-align: center;
+        } 
     }
     &__divider {
+        
         width: auto;
         height: 3px;
         background: #FF4C0D;
         border: 1px solid #FF4C0D;
         @media (max-width:870px) {
             width: 150px;
+        } 
+        @media (max-width: 660px) {
+            margin: 0 auto;
         } 
     }
     &__subtitle {
@@ -181,10 +175,10 @@
         letter-spacing: -0.01em;
         color: #F1F1F1;
         @media (max-width:870px){
-            font-size: 12px;
+            font-size: 13px;
         }
         @media (max-width:580px) {
-            font-size: 10px;
+            font-size: 12px;
         } 
         @media (max-width:440px) {
             font-size: 10px;
