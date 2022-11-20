@@ -3,38 +3,33 @@
 
 body {
     font-family: 'Gilroy';
-
-
     margin: 0 auto;
-
     // background: #E0E0E0;
     background: #222222;
-   
 }
 
 [class*="__container"] {
     max-width: 1160px;
     margin: 0 auto;
        @media (max-width:1200px) {
-        padding: 0px 20px;
+        padding: 0px 40px;
     } 
        @media (max-width:767.9px) {
-        padding: 0px 10px;
+        padding: 0px 20px;
     } 
 }
 [class*="__container2"] {
     max-width: 1160px;
     margin: 0 auto;
        @media (max-width:1200px) {
-        padding: 0 0 0 20px;
+        padding: 0 0 0 60px;
     } 
        @media (max-width:767.9px) {
-        padding: 0 0 0 10px;
+        padding: 0 0 0 20px;
     } 
 }
 .page {
     &_header {
-        
     }
     &__intro{ //выравниваем под нашу фиксированную шапку
        margin-top: 100px;
@@ -47,7 +42,7 @@ body {
        }
     }
     &__present{
-
+        padding-bottom: 130px;
     }
     &__title{ //стили всех title h1 на контентной части
         font-weight: 500;

@@ -129,7 +129,6 @@
         transform: scale(0); // скрываем центральный элемент бургера
     }
 //?------------------содержимое бургер меню-----------------------
-
     &__burger-menu {
         position: fixed;
         top: 0;
@@ -179,7 +178,6 @@
             background: none !important; //- в последствии исчезает и появляется в блоке intro
         }
 } 
-
 //?------------------Intro - титры, заголовок, байк-----------------------
 .intro {
     padding-top: 50px;
@@ -245,7 +243,6 @@
         font-size: 30px;
         line-height: 1.2;
         color: $color__p;
-       
         @media (max-width:1160px) {
             font-size: 25px;
         } 
