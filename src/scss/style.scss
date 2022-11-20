@@ -55,6 +55,8 @@ body {
         line-height: 1.1;
         color: #F1F1F1;
         padding-bottom: 60px;
+        display: flex;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.71);
         @media (max-width:1160px) {
             font-size: 40px;
             padding-bottom: 50px;
@@ -65,19 +67,26 @@ body {
         } 
         @media (max-width:780px) {
             font-size: 25px;
-            padding-bottom: 25px;
+            padding-bottom: 30px;
         } 
         @media (max-width:580px) {
             font-size: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
         } 
         @media (max-width:500px) {
             font-size: 17px;
-            padding-bottom: 18px;
+            padding-bottom: 20px;
         } 
         @media (max-width:440px) {
             font-size: 14px;
-            padding-bottom: 15px;
+            padding-bottom: 18px;
+        } 
+    }
+    &__title h2{
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.71);
+        @media (max-width:767.9px) {
+            margin: 0 auto;
+            text-align: center;
         } 
     }
 }

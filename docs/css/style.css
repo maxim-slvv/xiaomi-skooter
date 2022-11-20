@@ -74,11 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-input {
-  outline: 0;
-  outline-offset: 0;
-}
-
 @font-face {
   font-family: Gilroy;
   font-display: swap;
@@ -162,6 +157,8 @@ body {
   line-height: 1.1;
   color: #F1F1F1;
   padding-bottom: 60px;
+  display: flex;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.71);
 }
 @media (max-width: 1160px) {
   .page__title {
@@ -178,25 +175,34 @@ body {
 @media (max-width: 780px) {
   .page__title {
     font-size: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 580px) {
   .page__title {
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 @media (max-width: 500px) {
   .page__title {
     font-size: 17px;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 440px) {
   .page__title {
     font-size: 14px;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
+  }
+}
+.page__title h2 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.71);
+}
+@media (max-width: 767.9px) {
+  .page__title h2 {
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -430,6 +436,7 @@ body {
   font-size: 80px;
   line-height: 1;
   color: #F1F1F1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.84);
 }
 @media (max-width: 1160px) {
   .intro__container h1 {
@@ -459,7 +466,7 @@ body {
 }
 @media (max-width: 580px) {
   .intro__container h1 {
-    padding-top: 30px;
+    padding-top: 50px;
     font-size: 30px;
   }
 }
