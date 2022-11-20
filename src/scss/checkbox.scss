@@ -60,7 +60,7 @@
     $can-toggle-switch-font-size: 16px,
     $can-toggle-shadow: none
   ){
-    $can-toggle-switch-width: $can-toggle-width/2;
+    $can-toggle-switch-width: calc($can-toggle-width / 2);
     input[type="checkbox"] {
       &:focus ~ label, &:hover ~ label {
         .can-toggle__switch {
@@ -88,15 +88,15 @@
         border-radius: $can-toggle-border-radius;
        
         &:before {
-          left: $can-toggle-width/2;
+          left: calc($can-toggle-width / 2);
           font-size: $can-toggle-switch-font-size; 
           line-height: $can-toggle-height;
-          width: $can-toggle-width/2;
+          width: calc($can-toggle-width / 2);
           padding: 0 12px;
         }
         &:after {
           top: $can-toggle-offset; left: $can-toggle-offset;
-          border-radius: $can-toggle-border-radius/2;
+          border-radius: calc($can-toggle-border-radius / 2);
           width: $can-toggle-switch-width - $can-toggle-offset; 
           line-height: $can-toggle-height - ($can-toggle-offset*2);
           font-size: $can-toggle-switch-font-size;

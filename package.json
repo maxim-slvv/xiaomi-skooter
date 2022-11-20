@@ -9,7 +9,6 @@
 		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
 		"deploy": "gulp deployFTP --build"
-		
 	},
 	"author": "FLS",
 	"license": "ISC",
@@ -38,7 +37,7 @@
 		"gulp-ttf2woff2": "latest",
 		"gulp-util": "latest",
 		"gulp-version-number": "latest",
-		"gulp-webp": "latest",
+		"gulp-webp": "^4.0.1",
 		"gulp-webp-html-nosvg": "latest",
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
@@ -46,7 +45,7 @@
 		"swiper": "latest",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
-		"webpack": "latest",
-		"webpack-stream": "latest"
+		"webpack": "^5.75.0",
+		"webpack-stream": "^7.0.0"
 	}
 }

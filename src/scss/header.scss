@@ -29,7 +29,7 @@
     &__logo img {
         @media (max-width: 767.9px) {
             width: 40px;
-            height: 40px;
+            height: 25px;
         }
     }
     &__links {
@@ -170,34 +170,31 @@
     }
 }
 //?------------------Фоновое изображение -----------------------
-.background__image{
+.background__image, .background__image .webp{
         margin: 0 auto;
         max-width: 1160px;
         background: url('../img/intro/bike1-full.png') right top no-repeat;
-        background-size: contain;
-        @media (max-width:980px) {
-            background: none; //- в последствии исчезает и появляется в блоке intro
+        @media (max-width:980px) { 
+            background: none !important; //- в последствии исчезает и появляется в блоке intro
         }
-}
+} 
 
 //?------------------Intro - титры, заголовок, байк-----------------------
 .intro {
     padding-top: 50px;
-    padding-bottom: 250px;
+    padding-bottom: 250px; 
     @media (max-width:1160px) {
         padding-top: 60px;
         padding-bottom: 250px;
     } 
     @media (max-width: 980px) {
         background: url('../img/intro/bike1-mini.png') right top no-repeat;
-        background-size: contain;
         padding-bottom: 0px;
         padding-top: 0px;
         margin-top: 0px;
     } 
     @media (max-width: 700px) {
-        background: url('../img/intro/bike1-mini2.png') right top no-repeat;
-        background-size: contain;
+        background: url('../img/intro/bike1-mini2.png')  right top no-repeat;
         padding-bottom: 0px;
         padding-top: 0px;
         margin-top: 0px;
