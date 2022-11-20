@@ -169,31 +169,29 @@ body {
 @media (max-width: 1040px) {
   .page__title {
     font-size: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 780px) {
   .page__title {
     font-size: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 580px) {
   .page__title {
     font-size: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 500px) {
   .page__title {
     font-size: 17px;
-    padding-bottom: 20px;
   }
 }
 @media (max-width: 440px) {
   .page__title {
     font-size: 14px;
-    padding-bottom: 18px;
   }
 }
 .page__title h2 {
@@ -803,11 +801,6 @@ body {
 @media (max-width: 580px) {
   .present__title {
     margin-top: 30px;
-  }
-}
-@media (max-width: 440px) {
-  .present__title {
-    margin-top: 15px;
   }
 }
 .present__cards {
