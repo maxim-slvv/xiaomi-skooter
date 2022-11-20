@@ -230,6 +230,18 @@
         0 4px 4px rgba(black, 0) // Switch shadow on hover/focus
       );
     } 
+    @media (max-width:360px) {
+      @include can-toggle-appearance
+      (
+        100px, // Toggle width
+        33px,  // Toggle height
+        100px,   // Toggle border radius
+        -1px,   // Offset (distance btw switch and box)
+        10px,  // Label font size
+        8px,  // Switch font size
+        0 4px 4px rgba(black, 0) // Switch shadow on hover/focus
+      );
+    } 
     }
 }
 .checkbox__border{
@@ -248,5 +260,9 @@
     @media (max-width:450px) {
       width: 120px;
       height: 38px;
+    }
+    @media (max-width:360px) {
+      width: 103px;
+      height: 37px;
     }
 }
