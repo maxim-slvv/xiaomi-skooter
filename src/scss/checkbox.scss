@@ -49,7 +49,6 @@
       }
     }
   }
-  
   @mixin can-toggle-appearance 
   ( 
     $can-toggle-width: 250px,
@@ -84,9 +83,7 @@
       font-size: $can-toggle-label-font-size;
       .can-toggle__switch {
         height: $can-toggle-height;
-        
         border-radius: $can-toggle-border-radius;
-       
         &:before {
           left: calc($can-toggle-width / 2);
           font-size: $can-toggle-switch-font-size; 
@@ -115,7 +112,6 @@
       opacity: 0;
       position: absolute;
       top: 0; left: 0;
-      
       &[disabled] ~ label {
         pointer-events: none;
         .can-toggle__switch { opacity: 0.4; }
@@ -123,16 +119,12 @@
       &:checked {
         ~ label {
           .can-toggle__switch {
-
             &:before {
               content: attr(data-unchecked);
               left: 0;
-              
-        
             }
             &:after {
               content: attr(data-checked);
-          
             }  
           }
         }
@@ -193,7 +185,6 @@
         16px,  // Switch font size
         0 4px 4px rgba(black, 0) // Switch shadow on hover/focus
       );
-      
     @media (max-width:740px) {
       @include can-toggle-appearance
       (

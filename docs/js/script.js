@@ -14,8 +14,6 @@ function testWebP(callback) {
     document.querySelector('body').classList.add('no-webp');
     }
     });
-
-
 //бургер меню
 $(document).ready(function(){
     $('.header__burger').click(function(event){

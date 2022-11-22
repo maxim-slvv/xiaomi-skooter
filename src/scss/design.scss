@@ -1,13 +1,7 @@
 .design {
-    &__container {
-    }
-    &__bottom {
-
-    }
     &__title{
         padding-top: 0px;
     }
-    
     &__cards {
         width: auto;
         height: auto;
@@ -62,9 +56,7 @@
         @media (max-width:370px) { 
             padding: 10px; 
         }
-       
         flex: 1 1 50%;
-       
         @media (max-width:900px) { 
             flex: 1 1 auto; 
             max-width: 550px;

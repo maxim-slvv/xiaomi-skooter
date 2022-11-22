@@ -1,6 +1,4 @@
 .present {
-    &__container {
-    }
     &__title {
        margin-top: 0px;
         @media (max-width:980px) {
@@ -71,10 +69,8 @@
        height: auto;
     }
     &__hiddensmall img{
-    
        height: auto;
     }
-    
     &__hiddenbig, &__hiddenbig1{
         position: relative;
         margin-right: 10px;
@@ -96,9 +92,7 @@
     }
     &__hiddenbig1{
         position: relative;
-        margin-right: 10px;
-       
-       
+        margin-right: 10px; 
     }
     &__hiddenbig img {
         max-width: 100%;
@@ -106,8 +100,6 @@
         @media (max-width:975px){
             width: 100%;
             object-fit: cover;
-            // position: absolute; top: 50%; left: 50%;
-            // transform: translate(-50%, 0%);
         }
     }
     &__hiddenbig1 img {
@@ -131,11 +123,9 @@
             display: none;
         }
     }
-
 }
 //?------------------Карточки -----------------------
 .card {
-  
     &__title {
         font-weight: 600;
         font-size: 20px;
@@ -155,7 +145,6 @@
         } 
     }
     &__divider {
-        
         width: auto;
         height: 3px;
         background: #FF4C0D;

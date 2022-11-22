@@ -4,7 +4,6 @@
         margin: 0 auto;
         max-width: 1160px;
         background: url('../img/bigcard/bg-card.jpg') 50% no-repeat;
-     
     }
     &__filter{
         @media (max-width:767.9px) { 
@@ -12,12 +11,10 @@
         }
     }
     &__container {
-        
         padding: 90px 100px;
         @media (max-width:1160px) { 
             padding: 70px 90px;
         }
-      
         @media (max-width:1200px) { 
             padding: 45px 40px;
         }
@@ -45,9 +42,6 @@
             width: 40px;
             height: 25px;
         }
-    }
-    &__bottom {
-
     }
     &__title h4 {
         padding-bottom: 30px;
