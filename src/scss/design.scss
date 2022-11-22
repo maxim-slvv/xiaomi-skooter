@@ -16,6 +16,7 @@
         }
     }
     &__item1 {
+        border-radius: 10px;
         padding: 60px;
         @media (max-width:1200px) { 
             padding: 30px; 
@@ -46,6 +47,7 @@
         }
     }
     &__item2 {
+        border-radius: 10px;
         padding: 60px;
         @media (max-width:1200px) { 
             padding: 30px; 

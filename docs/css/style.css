@@ -717,6 +717,7 @@ body {
   background: url("../img/design/1.png") 50% center no-repeat; }
 
 .design__item1 {
+  border-radius: 10px;
   padding: 60px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
@@ -728,6 +729,7 @@ body {
   background: url("../img/design/2.png") 50% center no-repeat; }
 
 .design__item2 {
+  border-radius: 10px;
   padding: 60px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
@@ -825,6 +827,13 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.wow_mod {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 @media (max-width: 1200px) {

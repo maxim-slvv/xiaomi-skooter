@@ -130,3 +130,12 @@ $color__p: #FF4C0D;
 @import "care";
 @import "mobile";
 
+//изменения анимации
+.wow {
+    &_mod{
+        animation-duration: 1s;
+        animation-delay: 0.2s;
+    }
+ }
+//  wow fadeIn wow_mod - даем секции
+//  wow wow_mod - даем отдельному элементу
